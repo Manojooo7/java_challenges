@@ -25,7 +25,37 @@ else if (johnBMI === markBMI) {
 }
  
 
- 
+/* switch statement */
+
+const day= 'thursday';
+
+switch (day) {
+    case 'monday': // day === moday
+        console.log('Plan to study maths');
+        break;
+    case 'tuesday':
+        console.log('Need to go to gym');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('wirte code');
+        break;
+    case 'friday':
+        console.log('watching course videos');
+        break;
+    default:
+        console.log('Invalid Day');
+        break;
+}
+
+// Challenge 4 conditional operetor
+
+const bill = 200;
+// coditional ternary operetor
+const tip = bill >= 50 && bill <= 300 ? bill * 15 /100 : bill * 20 /100;
+const totalAmount = bill + tip;
+console.log(`The bill was ${bill}, the tip was ${tip} and the total amount is ${totalAmount}`);
+
 
 
 
