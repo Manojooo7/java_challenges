@@ -175,12 +175,19 @@
 
 // Fundamental coding challenge 4
 
-// const bills= [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-// const tips = []
-// const total = [];
-// const calcTip = bills >= 50 && bills <= 300 ? bills * 15 /100 : bills * 20 /100;
+const bills= [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = []
+const total = [];
+const calcTip = function (bill){
+    return bill >= 5 && bill <= 300 ? bill * 0.15 : bill *0.2;
+}
 
-// for(let bills = 0; bills >= 50 && bills <= 300 ? bills * 15 /100 : bills * 20 /100; bills++){
+for(let i = 0; i < bills.length; i++){
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    total.push(tip + bills[i]);
 
-// }
+}
+
+console.log(bills,tips, total);
 
